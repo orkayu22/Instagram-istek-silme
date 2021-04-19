@@ -27,7 +27,7 @@ class Instagram:
         passwordInput.send_keys(Keys.ENTER)
         time.sleep(5)
 
-    def getFollowers(self):
+    def getTakipistekleri(self):
         url= 'https://www.instagram.com/accounts/access_tool/current_follow_requests?hl=tr'
         self.browser.get(url)
         try:
@@ -65,5 +65,5 @@ class Instagram:
 
 instagrm = Instagram(username, password)
 instagrm.signIn()
-instagrm.getFollowers()
-# instagrm.tektek()
+instagrm.getTakipistekleri()
+instagrm.tektek()
